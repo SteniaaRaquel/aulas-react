@@ -1,0 +1,13 @@
+.banner{
+    background-color: #fff1c1;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#descricao{
+    font-size: 3rem;
+    position: relative;
+    left: auto;
+}

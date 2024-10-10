@@ -1,10 +1,16 @@
-import { useState } from "react";
 import "./App.css";
 import Banner from "./componentes/Banner/Banner";
 import Card from "./componentes/Card";
+import Contador from "./componentes/Contador"
+import Post from "./componentes/Post"
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [tema, setTema] = useState("white");
+  
+  function mudarTema(){
+    setTema("gray")
+  }
 
   return (
     <>
@@ -12,8 +18,13 @@ function App() {
       <Banner
         imagem="https://receitanatureba.com/wp-content/uploads/2022/01/cuscus-com-ovo.jpg"
         legenda="Cuscuz com ovo"
-      /> */}
-      <Card/>
+      />
+      <Card/>  */}
+      {/* <div style={{backgroundColor:tema, width:"100vw", height:"100vh"}}>
+      <Contador mudarTema={mudarTema}/>
+      </div> */}
+
+      <Post/>
     </>
   );
 }
